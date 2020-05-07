@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Cadastro.css">
+    <script src="cadastro.js"></script>
+    <title>SGSA - Cadastro</title>
+</head>
+
+<body>
+    <div id="content">
+        <div id="Cadastro">
+            <div class="tab">
+                <button class="tablinks" id="tabaluno" onclick="openCad(event, 'aluno')">Aluno</button>
+                <button class="tablinks" id="tabprof" onclick="openCad(event, 'professor')">Professor</button>
+                <button class="tablinks" id="tabdisc" onclick="openCad(event, 'disciplina')">Disciplina</button>
+            </div>
+
+            <div id="aluno" class="tabcontent">
+                <h3>Cadastro - Aluno</h3>
+                <label for="namedata">Nome</label>
+                <input type="text" placeholder="José Santos" class="nome" minlength="8"><br>
+                <label for="matriculadata">Matrícula</label>
+                <input type="text" placeholder="0000" class="matricula" minlength="8"><br>
+                <label for="emaildata">E-mail</label>
+                <input type="email" placeholder="nome@exemplo.com" class="email" minlength="8"><br>
+                <label for="obsdata">Observação</label>
+                <input type="text" placeholder="Observação" class="obs" minlength="8"><br>
+                <div class="share50">
+                    <label class="loginlbl" for="logindata">Login</label>
+                    <input type="text" class="log" placeholder="jose.s"><br>
+                </div>
+                <div class="share50">
+                    <label class="pwdlbl" for="passworddata">Senha</label>
+                    <input type="password" placeholder="0000" class="pwd" minlength="4"><br><br>
+                </div>
+                <button class="btn1" type="submit">Confirmar</button>
+                <button class="btn2" type="submit"><a id="link2" href="Login.html">Voltar</a></button>
+            </div>
+            <div id="professor" class="tabcontent">
+                <h3>Cadastro - Professor</h3>
+                <label for="namedata">Nome</label>
+                <input type="text" placeholder="José Santos" class="nome" minlength="8"><br>
+                <label for="matriculadata">ID</label>
+                <input type="text" placeholder="0000" class="matricula" minlength="8"><br>
+                <label for="emaildata">E-mail</label>
+                <input type="email" placeholder="nome@exemplo.com" class="email" minlength="8"><br>
+                <label for="obsdata">Observação</label>
+                <input type="text" placeholder="Observação" class="obs" minlength="8"><br>
+                <div class="share50">
+                    <label class="loginlbl" for="logindata">Login</label>
+                    <input type="text" class="log" placeholder="jose.s"><br>
+                </div>
+                <div class="share50">
+                    <label class="pwdlbl" for="passworddata">Senha</label>
+                    <input type="password" placeholder="0000" class="pwd" minlength="4"><br><br>
+                </div>
+                <button class="btn1" type="submit">Confirmar</button>
+                <button class="btn2" type="submit"><a class="link2" href="Login.html">Voltar</a></button>
+            </div>
+            <div id="disciplina" class="tabcontent">
+                <h3>Cadastro - Disciplina</h3>
+                <label for="namedata">Nome</label>
+                <input type="text" placeholder="Matemática" class="nome" minlength="8"><br>
+                <label for="matriculadata">Professor</label>
+                <input type="text" placeholder="José Santos" class="matricula" minlength="8"><br>
+                <h4>Assunto</h4>
+                <div class="checkbox-container" id="checkbox1">
+                    <input class="checkbox" type="checkbox">
+                    <label class="checkbox-label">Assunto 1</label>
+                    <input class="checkbox" type="checkbox">
+                    <label class="checkbox-label">Assunto 2</label>
+                    <input class="checkbox" type="checkbox">
+                    <label class="checkbox-label">Assunto 3</label>
+                </div>
+                <div class="checkbox-container" id="checkbox2">
+                    <input class="checkbox" type="checkbox">
+                    <label class="checkbox-label">Assunto 4</label>
+                    <input class="checkbox" type="checkbox">
+                    <label class="checkbox-label">Assunto 5</label>
+                    <input class="checkbox" type="checkbox">
+                    <label class="checkbox-label">Assunto 6</label>
+                </div>
+                <div>
+                    <button class="btn1" type="submit">Confirmar</button>
+                    <button class="btn2" type="submit"><a class="link2" href="Login.html">Voltar</a></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
